@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/first_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,16 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('images/darkSky.jpg'),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-      ),
+      home: FirstPage(),
     );
   }
 }
