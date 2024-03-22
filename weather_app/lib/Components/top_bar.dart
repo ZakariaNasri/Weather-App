@@ -22,6 +22,9 @@ class TopBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(FontAwesomeIcons.locationDot),
+            SizedBox(
+              width: 5,
+            ),
             Text(
               'Batna',
               style: kNormalTextStyle,
