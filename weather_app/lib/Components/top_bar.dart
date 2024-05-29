@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/utilities/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import '../screens/second_page.dart';
 
 class TopBar extends StatelessWidget {
   @override
@@ -13,9 +14,16 @@ class TopBar extends StatelessWidget {
           height: 50,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10), color: kPrimaryColor),
-          child: Icon(
-            FontAwesomeIcons.locationArrow,
-            color: Colors.white,
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return SearchPage();
+              }));
+            },
+            child: Icon(
+              FontAwesomeIcons.locationArrow,
+              color: Colors.white,
+            ),
           ),
         ),
         Row(

@@ -12,6 +12,7 @@ class _FirstPageState extends State<FirstPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      minimum: EdgeInsets.symmetric(vertical: 30),
       child: Scaffold(
         body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -46,7 +47,7 @@ class _FirstPageState extends State<FirstPage> {
                   ),
                   borderRadius: BorderRadius.circular(15)),
               child: Text(
-                'Try to Take a Coat just in case',
+                'Try to Take a Coat just in case ',
                 style: kQuoteTextStyle,
               ),
             )
